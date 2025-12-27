@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbound Voyages | Experience the Cosmos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Book your next interstellar vacation with Starbound Voyages. Visit Mars, Europa, and beyond.">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <header>
+        <nav class="glass-panel">
+            <div class="logo">Starbound</div>
+            <!-- Simple nav for aesthetics -->
+            <ul class="nav-links">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">The Ship</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Beyond the <span class="gradient-text">Event Horizon</span></h1>
+                <p>Luxury deep-space cruisers to the solar system's most exotic destinations.</p>
+                <button id="bookBtn" class="cta-button">Begin Your Journey</button>
+            </div>
+            <div class="planet-container">
+                <div class="planet"></div>
+                <div class="orbit-ring"></div>
+            </div>
+        </section>
+
+        <section id="destinations">
+            <h2>Cosmic Destinations</h2>
+            <div class="card-grid">
+                <div class="card glass-panel">
+                    <h3>Mars Colony One</h3>
+                    <p>The red jewel of the system. Experience low-gravity hiking.</p>
+                </div>
+                <div class="card glass-panel">
+                    <h3>Europa Deep</h3>
+                    <p>Sub-surface ocean resorts under the ice of Jupiter's moon.</p>
+                </div>
+                <div class="card glass-panel">
+                    <h3>Titan's Watch</h3>
+                    <p>Gaze at the rings of Saturn from our methane-lake chalets.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn">&times;</span>
+            <h2>Book Your Flight</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Major Tom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="tom@groundcontrol.com">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="mars">Mars</option>
+                        <option value="europa">Europa</option>
+                        <option value="titan">Titan</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button full-width">Launch Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
