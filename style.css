@@ -240,12 +240,14 @@ h1 {
     }
 }
 
-/* Destinations */
-#destinations {
+/* Destinations & Packages */
+#destinations,
+#packages {
     padding: 5rem 10%;
 }
 
-#destinations h2 {
+#destinations h2,
+#packages h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
